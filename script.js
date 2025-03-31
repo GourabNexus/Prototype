@@ -122,3 +122,40 @@ document.querySelector('.carousel-wrapper').addEventListener('mouseleave', () =>
 updateCarousel();
 
 });
+
+function toggleForm(type) {
+    const formTitle = document.getElementById('formTitle');
+    const authForm = document.getElementById('authForm');
+    const resetForm = document.getElementById('resetForm');
+
+    if (type === "signup") {
+        formTitle.innerText = "Sign Up";
+        authForm.innerHTML = `
+            <input type="text" placeholder="Enter your Name" required>
+            <input type="email" placeholder="Enter your Email" required>
+            <input type="password" placeholder="Enter your Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <button type="submit">Sign Up</button>
+            <p class="toggle">Already have an account? <a onclick="toggleForm('login')">Log In</a></p>
+        `;
+        resetForm.classList.add('hidden');
+        authForm.classList.remove('hidden');
+    } 
+    else if (type === "forgot") {
+        formTitle.innerText = "Reset Password";
+        authForm.classList.add('hidden');
+        resetForm.classList.remove('hidden');
+    } 
+    else {
+        formTitle.innerText = "Log In";
+        authForm.innerHTML = `
+            <input type="email" placeholder="Enter your Email" required>
+            <input type="password" id="passwordField" placeholder="Enter your Password" required>
+            <button type="submit">Log In</button>
+            <a class="forgot-password" onclick="toggleForm('forgot')">Forgot Password?</a>
+            <p class="toggle">Don't have an account? <a onclick="toggleForm('signup')">Sign Up</a></p>
+        `;
+        resetForm.classList.add('hidden');
+        authForm.classList.remove('hidden');
+    }
+}
