@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('background.webp') no-repeat center center/cover;
+            backdrop-filter: blur(10px);
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 90%;
+            max-width: 450px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            background: #d9534f;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            width: 100%;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease-in-out;
+        }
+
+        button:hover {
+            background: #c9302c;
+            transform: scale(1.05);
+        }
+
+        .toggle a, .forgot-password {
+            color: #d9534f;
+            font-weight: bold;
+            cursor: pointer;
+            display: block;
+            margin-top: 10px;
+        }
+
+        /* Back to Home Button Styling */
+        .back-home-btn {
+            background: #555;
+            margin-top: 15px;
+            text-align: center;
+            font-size: 16px;
+            transition: background 0.3s ease, transform 0.2s ease-in-out;
+        }
+
+        .back-home-btn:hover {
+            background: #333;
+            transform: scale(1.05);
+        }
+
+        /* Hide reset form by default */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="formTitle">Log In</h1>
+        <form id="authForm">
+            <input type="email" placeholder="Enter your Email" required>
+            <input type="password" id="passwordField" placeholder="Enter your Password" required>
+            <button type="submit">Log In</button>
+            <a class="forgot-password" onclick="toggleForm('forgot')">Forgot Password?</a>
+            <p class="toggle">Don't have an account? <a onclick="toggleForm('signup')">Sign Up</a></p>
+        </form>
+
+        <!-- Password Reset Form -->
+        <form id="resetForm" class="hidden">
+            <h1>Reset Password</h1>
+            <input type="email" placeholder="Enter your Email" required>
+            <button type="submit">Send Reset Link</button>
+            <p class="toggle"><a onclick="toggleForm('login')">Back to Log In</a></p>
+        </form>
+
+        <!-- Back to Home Button -->
+        <a href="index.html">
+            <button class="back-home-btn">⬅ Back to Home</button>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
