@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodFlix | Premium Food Delivery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">FoodFlix</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#order" class="cta-button">Order Now</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <button class="login-btn">Log In</button>
+            <button class="signup-btn">Sign Up</button>
+            <a href="#cart" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="pexels-robinstickel-70497.jpg" alt="Food 1">
+            </div>
+            <div class="slide fade">
+                <img src="pexels-robinstickel-70497.jpg" alt="Food 2">
+            </div>
+            <div class="slide fade">
+                <img src="pexels-ash-craig-122861-376464.jpg" alt="Food 3">
+            </div>
+            <div class="hero-content">
+                <h1>Unlimited Delicious Experiences</h1>
+                <p>Order from 100+ premium recipes delivered to your door</p>
+                <button class="cta-button">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+<!-- Add this at top of menu-carousel section -->
+<div class="menu-header">
+    <h2 class="animated-heading">Our Servings</h2>
+    <div class="title-decoration"></div>
+</div>
+
+    <section class="menu-carousel">
+        <div class="carousel-wrapper">
+            <div class="carousel-container">
+                <div class="carousel-item previous">
+                    <img src="596343.jpg" alt="Burger">
+                    <h3>Classic Burger</h3>
+                    <p class="price">$12.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                
+                <div class="carousel-item active">
+                    <img src="598722.jpg" alt="Pizza">
+                    <h3>Margherita Pizza</h3>
+                    <p class="price">$15.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                
+                <div class="carousel-item next">
+                    <img src="913175.jpg" alt="Sushi">
+                    <h3>Sushi Platter</h3>
+                    <p class="price">$18.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="carousel-item next">
+                    <img src="657759.jpg" alt="Sushi">
+                    <h3>Pasta</h3>
+                    <p class="price">$20.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="carousel-item next">
+                    <img src="661076.jpg" alt="Sushi">
+                    <h3>Noodels</h3>
+                    <p class="price">$12.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+            <!-- Add more cards -->
+        </div>
+    </section>
+
+    <!-- Online Ordering Section -->
+    <section class="ordering-section" id="order">
+        <h2>Choose Your Delivery Option</h2>
+        <div class="delivery-options">
+            <button class="delivery-card uber">Uber Eats</button>
+            <button class="delivery-card doordash">DoorDash</button>
+            <button class="delivery-card direct">Direct Order</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-icons">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+        <div class="footer-links">
+            <a href="#">FAQ</a>
+            <a href="#">Privacy</a>
+            <a href="#">Speed Test</a>
+            <a href="#">Help Center</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
