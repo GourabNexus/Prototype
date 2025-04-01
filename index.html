@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -14,14 +16,13 @@
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#menu">Menu</a></li>
-            
+
             <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Contact Us</a></li>
             <li><a href="#order" class="cta-button">Order Now</a></li>
         </ul>
         <div class="nav-buttons">
-            <button class="login-btn">Log In</button>
-            <button class="signup-btn">Sign Up</button>
+            <a href="login_signup.html"><button class="login-btn">Log In/Sign Up</button></a>
             <a href="#cart" class="cart-icon">
                 <i class="fas fa-shopping-cart"></i>
                 <span class="cart-count">0</span>
@@ -52,11 +53,11 @@
         </div>
     </section>
 
-<!-- Add this at top of menu-carousel section -->
-<div class="menu-header">
-    <h2 class="animated-heading">Our Servings</h2>
-    <div class="title-decoration"></div>
-</div>
+    <!-- Add this at top of menu-carousel section -->
+    <div class="menu-header">
+        <h2 class="animated-heading">Our Servings</h2>
+        <div class="title-decoration"></div>
+    </div>
 
     <section class="menu-carousel">
         <div class="carousel-wrapper">
@@ -67,14 +68,14 @@
                     <p class="price">$12.99</p>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
-                
+
                 <div class="carousel-item active">
                     <img src="598722.jpg" alt="Pizza">
                     <h3>Margherita Pizza</h3>
                     <p class="price">$15.99</p>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
-                
+
                 <div class="carousel-item next">
                     <img src="913175.jpg" alt="Sushi">
                     <h3>Sushi Platter</h3>
@@ -96,35 +97,124 @@
             </div>
         </div>
     </section>
-            <!-- Add more cards -->
+    <!-- Add more cards -->
+    </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <h2>About FoodFlix</h2>
+            <p>At <strong>FoodFlix</strong>, we believe in delivering not just food but an unforgettable dining
+                experience.
+                Our mission is to provide fresh, delicious, and high-quality meals to your doorstep with a touch of
+                convenience.</p>
+
+            <p>We partner with top chefs and premium restaurants to bring you a variety of mouth-watering cuisines, all
+                at the tap of a button.</p>
+
+            <div class="about-features">
+                <div class="feature-item">
+                    <i class="fas fa-truck"></i>
+                    <h3>Fast Delivery</h3>
+                    <p>Hot & fresh meals delivered in record time.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-star"></i>
+                    <h3>Premium Quality</h3>
+                    <p>Only the best ingredients for every dish.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-smile"></i>
+                    <h3>Customer Satisfaction</h3>
+                    <p>Your happiness is our priority!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-us" id="contact">
+        <h2>Contact Us</h2>
+        <p>We’d love to hear from you! Reach out with any questions, feedback, or inquiries.</p>
+
+        <div class="contact-container">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+1 (234) 567-890</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>support@foodflix.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>123 Food Street, Flavor Town, USA</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </div>
     </section>
 
     <!-- Online Ordering Section -->
     <section class="ordering-section" id="order">
         <h2>Choose Your Delivery Option</h2>
+        <p>Get your favorite meals delivered with the fastest and most reliable options available.</p>
+
         <div class="delivery-options">
-            <button class="delivery-card uber">Uber Eats</button>
-            <button class="delivery-card doordash">DoorDash</button>
-            <button class="delivery-card direct">Direct Order</button>
+            <div class="delivery-card uber">
+                <i class="fab fa-uber"></i>
+                <h3>Uber Eats</h3>
+                <p>Fast & reliable delivery at your doorstep.</p>
+                <button>Order Now</button>
+            </div>
+
+            <div class="delivery-card doordash">
+                <i class="fas fa-shipping-fast"></i>
+                <h3>DoorDash</h3>
+                <p>Wide range of restaurants with exclusive deals.</p>
+                <button>Order Now</button>
+            </div>
+
+            <div class="delivery-card direct">
+                <i class="fas fa-biking"></i>
+                <h3>Direct Order</h3>
+                <p>Order directly from FoodFlix for special discounts.</p>
+                <button>Order Now</button>
+            </div>
         </div>
     </section>
 
+
     <!-- Footer -->
     <footer class="footer">
-        <div class="social-icons">
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-twitter"></i>
-        </div>
-        <div class="footer-links">
-            <a href="#">FAQ</a>
-            <a href="#">Privacy</a>
-            <a href="#">Speed Test</a>
-            <a href="#">Help Center</a>
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Speed Test</a></li>
+                <li><a href="#">Help Center</a></li>
+            </ul>
+            <p class="footer-text">© 2025 FoodFlix. All Rights Reserved.</p>
         </div>
     </footer>
 
+
     <script src="script.js"></script>
 </body>
+
 </html>
